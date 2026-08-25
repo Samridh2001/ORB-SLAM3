@@ -1,0 +1,39 @@
+
+#--------------------------------------------------------------------------------------------
+# Camera Calibration & Configuration (EuRoC MAV / Standard Monocular Pinhole)
+#--------------------------------------------------------------------------------------------
+
+Camera:
+  type: "PinHole"
+  width: 752
+  height: 480
+  fps: 20.0
+  rgb: 0  # 0: Grayscale, 1: RGB
+
+  # Camera Intrinsics Matrix K:
+  # [fx   0   cx]
+  # [ 0  fy   cy]
+  # [ 0   0    1]
+  fx: 458.654
+  fy: 457.296
+  cx: 367.215
+  cy: 248.375
+
+  # Distortion Parameters (Brown-Conrady / RadTan):
+  # k1, k2: Radial distortion
+  # p1, p2: Tangential distortion
+  # k3: Secondary radial distortion
+  k1: -0.28340811
+  k2: 0.07395907
+  p1: 0.00019359
+  p2: 1.76187114e-05
+  k3: 0.0
+
+# Extrinsics: Body-to-Camera Transformation (T_bc: maps points in camera frame to IMU/body frame)
+# [ R_bc | t_bc ]
+# [  0   |   1  ]
+T_bc:
+  - [0.014865542, -0.999880929,  0.004140296, -0.021640145]
+  - [0.999557246,  0.014967213,  0.025715527, -0.064676986]
+  - [-0.025774436, 0.003756188,  0.999660727,  0.009810730]
+  - [0.0,          0.0,          0.0,          1.0]

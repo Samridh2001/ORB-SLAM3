@@ -1,0 +1,29 @@
+# Dataset folders (replace/add your specific folder names)
+mav_data/
+dataset/
+datasets/
+data/
+kitti/
+euroc/
+tum/
+
+# Common SLAM/Vision dataset file extensions
+*.png
+*.jpg
+*.jpeg
+*.bag
+*.pcd
+*.ply
+*.bin
+*.csv
+*.txt
+*.tar.gz
+*.zip
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+

@@ -1,0 +1,26 @@
+
+#--------------------------------------------------------------------------------------------
+# IMU Sensor Calibration & Noise Characteristics (ADIS16448 / EuRoC)
+#--------------------------------------------------------------------------------------------
+
+IMU:
+  frequency: 200.0   # IMU sampling rate (Hz)
+  gravity: 9.81      # Gravitational constant (m/s^2)
+
+  # Continuous-Time Noise Characteristics (Standard Deviations)
+  # Gyroscope noise density: rad / s / sqrt(Hz)
+  sigma_g: 1.6968e-04
+
+  # Accelerometer noise density: m / s^2 / sqrt(Hz)
+  sigma_a: 2.0000e-3
+
+  # Continuous-Time Random Walk Bias Drift Rates
+  # Gyroscope random walk: rad / s^2 / sqrt(Hz)
+  sigma_gw: 1.9393e-05
+
+  # Accelerometer random walk: m / s^3 / sqrt(Hz)
+  sigma_aw: 3.0000e-3
+
+  # Initial Bias Estimates [x, y, z]
+  init_bias_gyro: [0.0, 0.0, 0.0]
+  init_bias_acc:  [0.0, 0.0, 0.0]

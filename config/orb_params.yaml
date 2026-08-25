@@ -1,0 +1,12 @@
+# Feature Extractor Parameters (CPU Optimized)
+ORBextractor:
+  nFeatures: 1000       # Keypoints per image (reduced from 2000 for CPU real-time execution)
+  scaleFactor: 1.2      # Pyramid scale ratio
+  nLevels: 8            # Number of pyramid levels
+  iniThFAST: 20         # Initial FAST threshold
+  minThFAST: 7          # Minimum FAST threshold if insufficient corners found
+
+# Image Grid Parameters for QuadTree Distribution
+Grid:
+  nCols: 30
+  nRows: 30

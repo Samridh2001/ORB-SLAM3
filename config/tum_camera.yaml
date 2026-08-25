@@ -1,0 +1,19 @@
+
+Camera:
+  type: "PinHole"
+  width: 640
+  height: 480
+  fps: 30.0
+
+  # TUM Freiburg 1 Intrinsics
+  fx: 517.3
+  fy: 516.5
+  cx: 318.6
+  cy: 255.3
+
+  # Distortion Parameters (RadTan)
+  k1: 0.2624
+  k2: -0.9531
+  p1: -0.0054
+  p2: 0.0026
+  k3: 1.1633
